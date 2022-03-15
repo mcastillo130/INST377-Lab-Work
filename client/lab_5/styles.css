@@ -25,3 +25,91 @@ body {
   max-width: 960px;
   margin-top: 25px;
 }
+.container .heading{
+  max-width: 960px;
+  margin-top: 25px;
+}
+.heading {
+  text-align:left;
+  background-color: #D2B48C;
+  width: 80%;
+  margin: 40px 0;
+  padding: 25px;
+  border-radius: 3px;
+  font-size: 35px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+.speaker-form {
+  background-color: #F6F7F8;
+  border: 1px solid #D6D9DC;
+  border-radius: 20px;
+  width: 20%;
+  padding: 50px;
+  margin: 0 0 40px 0;
+  left: 80%;
+  transform: translate(90%,40%)
+}
+.form-row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.form-row input[type='text'],.form-row input[type='text'] {
+  background-color: #FFFFFF;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+.form-row label {
+  margin-bottom: 15px;
+}
+.form-row {
+  flex-direction: row;
+  align-items: flex-start; /* To avoid stretching */
+  margin-bottom: 20px;
+}
+.legacy-form-row {
+  border: none;
+  margin-bottom: 40px;
+}
+.legacy-form-row legend {
+  margin-bottom: 15px;
+}
+.legacy-form-row input[type='radio'] {
+  margin-top: 2px;
+}
+.form-row button {
+  font-size: 16px;
+  font-weight: bold;
+
+  color: #FFFFFF;
+  background-color: #3CB371;
+
+  border: none;
+  border-radius: 3px;
+
+  padding: 10px 40px;
+  cursor: pointer;
+}
+.comment1{
+  max-width: 960px;
+  margin-top: 25px;
+  text-align:left;
+  background-color: #FFFFFF;
+  width: 40%;
+
+  padding: 25px;
+  border-radius: 20px;
+  font-size: 15px;
+  position: absolute;
+  left: 60%;
+  transform: translate(-50%,450%)
+
+
+}
