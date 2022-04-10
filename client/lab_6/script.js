@@ -1,6 +1,12 @@
+function dataHandler(dataArray){
+
+}
+
 // As the last step of your lab, hook this up to index.html
 async function mainEvent() { // the async keyword means we can make API request
+  console.log('script loaded');
   const form = document.querySelector('.speaker-form');
+  const submit = document.querySelector('.submit_button')
   form.addEventListener('submit', async (submitEvent) => { // async has to be declared all the way to get an await
     submitEvent.preventDefault(); // This prevents your page from refreshing!
     console.log('form submission'); // this is substituting for a "breakpoint"
@@ -12,5 +18,6 @@ async function mainEvent() { // the async keyword means we can make API request
   });
 }
 
+//dataHandler():
 // this actually runs first! It's calling the function above
 document.addEventListener('DOMContentLoaded', async () => mainEvent()); // the async keyword means we can make API requests
