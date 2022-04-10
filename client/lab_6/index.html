@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>Speaker Submission</title>
+    
+    <link rel='stylesheet' href='styles.css'/>
+  </head>
+  <body class= 'wrapper'>
+    <header class='heading'>
+      <p>Prof A's Lab 5</p>
+
+    </header>
+    <form method='get' class='speaker-form'>
+      <div class='form-row'>
+        <label for='first-name'>First Name</label>
+        <input id='first-name' name='first-name' type='text'/>
+      </div>
+      <div class='form-row'>
+        <label for='food-preference'>Food Preference</label>
+        <input id='food-preference'
+         name='food-preference'
+         type='text'/>
+      </div>
+      <fieldset class='legacy-form-row'>
+        <legend>Veggie or Vegan?</legend>
+         <input id='type-1'
+         name='type'
+         type='radio'
+         value='Yes' />
+        <label for='type-1' class='typee-label'>Yes</label>
+        <input id='type-2'
+         name='type'
+         type='radio'
+         value='No'
+         checked />
+       <label for='type-2' class='typee-label'>No</label>
+    </fieldset>
+    <div class='form-row'>
+      <button>submit</button>
+    </div>
+
+    </form>
+    <div class= comment1>
+    <p> This is going to be something in 2 weeks.</p>
+    </div>
+    
+  </body>
+  <script src= "script.js"></script>
+</html>
