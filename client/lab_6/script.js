@@ -30,7 +30,7 @@ function createHtmlList(collection) {
   const targetList = document.querySelector('.resto-list');
   collection.forEach((item) => {
     const injectThisItem = `<li>${item.name}</li>`;
-    targetList.innerHTML = injectThisItem;
+    targetList.innerHTML += injectThisItem;
   });
 }
 
