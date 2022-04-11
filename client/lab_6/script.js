@@ -5,15 +5,26 @@ function getRandomIntInclusive(min, max) {
     Math.random() * (newMax - newMin + 1) + newMin
   ); // The maximum is inclusive and the minimum is inclusive
 }
+/*
+
+const arr = []
+for (let i=0; i < 1000; i++) {
+  arr.push(element[i])
+}
+*/
+
+
 
 function dataHandler(dataArray) {
   console.log('fired dataHandler');
   console.table(dataArray); // this is called "dot notation"
   const range = [...Array(15).keys()];
-  range.forEach((item) => {
-    console.log('range item', item);
+  const listItems = range.map((item, index) => {
+    const restNum = getRandomIntInclusive(0, dataArray.length - 1);
+    return dataArray[restNum];
   });
-}
+
+
 
 // As the last step of your lab, hook this up to index.html
 async function mainEvent() { // the async keyword means we can make API request
